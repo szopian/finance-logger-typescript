@@ -7,10 +7,19 @@ console.log("tsc sandbox.ts -w");
 
 // console.log(circ(1));
 
-let letters = ["a", "b", "c"];
+// let letters = ["a", "b", "c"];
 // letters.push(1);
-letters.push("d");
-console.log(letters);
+// letters.push("d");
+// console.log(letters);
 
-let numbers = [1, 2, 3];
-let numters = [1, "a", 2, "b"];
+// let numbers = [1, 2, 3];
+// let numters = [1, "a", 2, "b"];
+
+let letters: string;
+let numbers: number;
+let isLogggedIn: boolean;
+
+numbers = 40;
+isLogggedIn = true;
+
+console.log(numbers, isLogggedIn);
