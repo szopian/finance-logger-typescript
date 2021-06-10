@@ -11,6 +11,12 @@ var Invoice = /** @class */ (function () {
     };
     return Invoice;
 }());
+var invOne = new Invoice("greg", "work on website", 250);
+var invTwo = new Invoice("adri", "work on platform", 450);
+var invoices = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+console.log(invoices);
 var form = document.querySelector(".new-item-form");
 //inputs
 var type = document.querySelector("#type");

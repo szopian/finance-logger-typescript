@@ -15,6 +15,14 @@ class Invoice {
   }
 }
 
+const invOne = new Invoice("greg", "work on website", 250);
+const invTwo = new Invoice("adri", "work on platform", 450);
+
+let invoices: Invoice[] = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+console.log(invoices);
+
 const form = document.querySelector(".new-item-form") as HTMLFormElement;
 
 //inputs
