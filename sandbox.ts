@@ -24,6 +24,19 @@ console.log("tsc sandbox.ts -w");
 
 // console.log(numbers, isLogggedIn);
 
-let mixed: (string | number)[] = [];
-mixed.push(10);
-mixed.push("greg");
+// let mixed: (string | number)[] = [];
+// mixed.push(10);
+// mixed.push("greg");
+// console.log(mixed);
+
+let person1: object;
+person1 = { name: "greg", age: 32 };
+console.log(person1);
+
+let person2: {
+  name: string;
+  age: number;
+};
+
+person2 = { name: "adri", age: 21 };
+console.log(person2);
