@@ -1,2 +1,6 @@
 "use strict";
-console.log("TEST");
+var greet;
+greet = function () {
+    console.log("hi test");
+};
+greet();
