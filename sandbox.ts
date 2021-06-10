@@ -15,11 +15,15 @@ console.log("tsc sandbox.ts -w");
 // let numbers = [1, 2, 3];
 // let numters = [1, "a", 2, "b"];
 
-let letters: string;
-let numbers: number;
-let isLogggedIn: boolean;
+// let letters: string;
+// let numbers: number;
+// let isLogggedIn: boolean;
 
-numbers = 40;
-isLogggedIn = true;
+// numbers = 40;
+// isLogggedIn = true;
 
-console.log(numbers, isLogggedIn);
+// console.log(numbers, isLogggedIn);
+
+let mixed: (string | number)[] = [];
+mixed.push(10);
+mixed.push("greg");
