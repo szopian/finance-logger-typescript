@@ -1,9 +1,17 @@
 "use strict";
-// const anchor = document.querySelector("a")!;
-// console.log(anchor.href);
-// const form =document.querySelector('form')!;
+//class
+var Invoice = /** @class */ (function () {
+    function Invoice(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+    Invoice.prototype.format = function () {
+        return this.client + " owes \u00A3" + this.amount + " for " + this.details;
+    };
+    return Invoice;
+}());
 var form = document.querySelector(".new-item-form");
-// console.log(form.children);
 //inputs
 var type = document.querySelector("#type");
 var tofrom = document.querySelector("#tofrom");
