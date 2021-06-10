@@ -29,14 +29,34 @@ console.log("tsc sandbox.ts -w");
 // mixed.push("greg");
 // console.log(mixed);
 
-let person1: object;
-person1 = { name: "greg", age: 32 };
-console.log(person1);
+// let person1: object;
+// person1 = { name: "greg", age: 32 };
+// console.log(person1);
 
-let person2: {
-  name: string;
-  age: number;
-};
+// let person2: {
+//   name: string;
+//   age: number;
+// };
 
-person2 = { name: "adri", age: 21 };
-console.log(person2);
+// person2 = { name: "adri", age: 21 };
+// console.log(person2);
+
+let age: any = 25;
+age = true;
+console.log(age);
+age = "hello";
+console.log(age);
+age = { name: "greg" };
+console.log(age);
+
+let mixed: any[] = [];
+mixed.push(5);
+mixed.push("g");
+mixed.push(true);
+
+console.log(mixed);
+
+let person: { name: any; age: any };
+
+person = { name: 12, age: "you" };
+console.log(person);
