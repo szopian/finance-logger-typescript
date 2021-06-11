@@ -1,15 +1,4 @@
-//class
-class Invoice {
-  constructor(
-    readonly client: string,
-    private details: string,
-    public amount: number
-  ) {}
-
-  format() {
-    return `${this.client} owes £${this.amount} for ${this.details}`;
-  }
-}
+import { Invoice } from "./classes/invoice.js";
 
 const invOne = new Invoice("greg", "work on website", 250);
 const invTwo = new Invoice("adri", "work on platform", 450);
