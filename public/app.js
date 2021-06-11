@@ -1,3 +1,15 @@
+const me = {
+    name: "Greg",
+    age: 32,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log("I sepnd", amount);
+        return amount;
+    },
+};
+console.log(me, spend(20), speak("bla bla bla"));
 import { Invoice } from "./classes/invoice.js";
 const invOne = new Invoice("greg", "work on website", 250);
 const invTwo = new Invoice("adri", "work on platform", 450);
